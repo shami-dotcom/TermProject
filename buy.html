@@ -1,0 +1,244 @@
+<!-- Name: Ehtisham abid | ID: 22008105008 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carz Optionz - Buy a Car</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('images/buy3.avif') no-repeat center center fixed;
+      background-size: cover;
+      
+    }
+
+    .navbar {
+      background-color: #000;
+    }
+
+    .navbar-brand {
+      color: #00e6e6;
+      font-weight: bold;
+    }
+
+    .navbar-brand img {
+      height: 35px;
+      margin-right: 10px;
+    }
+
+    .nav-link {
+      color: white !important;
+    }
+
+    .nav-link:hover {
+      background-color: #00e6e6;
+      color: black !important;
+      border-radius: 4px;
+    }
+
+    .container-bg {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 30px;
+      border-radius: 10px;
+      margin-top: 40px;
+    }
+
+    .search-btn {
+      padding: 10px 20px;
+      background-color: #00e6e6;
+      border: none;
+      color: #000;
+      font-weight: bold;
+      border-radius: 6px;
+    }
+
+    .car-card {
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      overflow: hidden;
+      color: white;
+      transition: transform 0.3s;
+    }
+
+    .car-card:hover {
+      transform: scale(1.03);
+    }
+
+    .car-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .car-card h5 {
+      color: #00e6e6;
+    }
+
+    .details-link {
+      color: #00e6e6;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .details-link:hover {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid px-4">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="images/carzoptionz.jpg" alt="Logo" />
+        Carz Optionz
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="buy.html">Buy</a></li>
+          <li class="nav-item"><a class="nav-link" href="sell.html">Sell</a></li>
+          <li class="nav-item"><a class="nav-link" href="best.html">Best of 2025</a></li>
+          <li class="nav-item"><a class="nav-link" href="bid.html">Bid the Car</a></li>
+          <li class="nav-item"><a class="nav-link" href="suggestion.html">Suggestions</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="price.html">Price Calculator</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ✅ Car Filters + Cards -->
+  <div class="container container-bg">
+    <h1 class="text-center text-info mb-4">Find Your Perfect Car</h1>
+
+    <!-- Filters -->
+    <div class="row g-3 mb-4">
+      <div class="col-md-3 col-sm-6">
+        <select class="form-select">
+          <option selected>Car Brand</option>
+          <option>Toyota</option>
+          <option>Honda</option>
+          <option>Suzuki</option>
+        </select>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <select class="form-select">
+          <option selected>Model</option>
+          <option>2020</option>
+          <option>2021</option>
+          <option>2022</option>
+        </select>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <select class="form-select">
+          <option selected>Price Range</option>
+          <option>0 - 10 Lakh</option>
+          <option>10 - 20 Lakh</option>
+          <option>20+ Lakh</option>
+        </select>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <select class="form-select">
+          <option selected>Year</option>
+          <option>2019</option>
+          <option>2020</option>
+          <option>2021</option>
+        </select>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <select class="form-select">
+          <option selected>Transmission</option>
+          <option>Automatic</option>
+          <option>Manual</option>
+        </select>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <select class="form-select">
+          <option selected>Fuel Type</option>
+          <option>Petrol</option>
+          <option>Diesel</option>
+          <option>Hybrid</option>
+        </select>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <select class="form-select">
+          <option selected>Condition</option>
+          <option>Excellent</option>
+          <option>Used</option>
+          <option>Minor Issues</option>
+        </select>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <select class="form-select">
+          <option selected>Body Type</option>
+          <option>Sedan</option>
+          <option>Hatchback</option>
+          <option>SUV</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="text-center mb-4">
+      <button class="search-btn">Search</button>
+    </div>
+
+    <!-- Car Cards -->
+    <div class="row g-4">
+      <div class="col-md-3 col-sm-6">
+        <div class="car-card p-3">
+          <img src="images/buy3.avif" alt="Honda Civic">
+          <h5 class="mt-2">2019 Honda Civic</h5>
+          <p>PKR: 3,500,000</p>
+          <p>Lahore</p>
+          <a href="#" class="details-link">Details</a>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="car-card p-3">
+          <img src="images/buy0.jpeg" alt="Toyota Corolla">
+          <h5 class="mt-2">2020 Toyota Corolla</h5>
+          <p>PKR: 4,800,000</p>
+          <p>Karachi</p>
+          <a href="#" class="details-link">Details</a>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="car-card p-3">
+          <img src="images/buy1.avif" alt="Suzuki Alto">
+          <h5 class="mt-2">2021 Suzuki Alto</h5>
+          <p>PKR: 1,800,000</p>
+          <p>Islamabad</p>
+          <a href="#" class="details-link">Details</a>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="car-card p-3">
+          <img src="images/buy2.avif" alt="Hyundai Tucson">
+          <h5 class="mt-2">2019 Hyundai Tucson</h5>
+          <p>PKR: 5,500,000</p>
+          <p>Faisalabad</p>
+          <a href="#" class="details-link">Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
